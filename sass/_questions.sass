@@ -1,0 +1,128 @@
+.questions
+ padding-top: 30px
+ position: relative
+ &-title
+  font-family: Literata
+  font-style: normal
+  font-weight: bold
+  font-size: 48px
+  line-height: 71px
+  text-align: right
+  color: #1A1A1A
+  position: relative
+  &::before
+   content: ''
+   width: 715px
+   height: 3px
+   background: linear-gradient(59deg, rgba(0,147,209,0.5) 0%, rgba(0,147,209,1) 100%)
+   position: absolute
+   right: 50%
+   margin-right: -50%
+   bottom: -10px
+ &-blocks
+  margin-top: 50px
+  &:first-child
+   &::before
+    width: 0
+ &-block
+  display: flex
+  justify-content: center
+  position: relative
+  padding-bottom: 30px
+  padding-top: 30px
+  margin-left: 10px
+  &::after
+   content: ''
+   width: 720px
+   border: 3px solid #BAEBFF
+   position: absolute
+   bottom: 0
+  &__wrap
+   position: relative
+   top: 0
+   margin-top: 14.5px
+   span
+    width: 25px
+    height: 5px
+    top: 0
+    background: #1A1A1A
+    transition: all 0.2s
+    position: absolute
+    &::before
+     content: ''
+     width: 25px
+     height: 5px
+     top: 0
+     background: #1A1A1A
+     transition: all 0.2s
+     position: absolute
+     transform: rotate(-90deg)
+  &__btn1
+   cursor: pointer
+   &-active
+    transition: all 0.2s
+    span
+     &::before
+      transform: rotate(0deg)
+  &__btn2
+   cursor: pointer
+   &-active
+    transition: all 0.2s
+    span
+     &::before
+      transform: rotate(0deg)
+  &__btn3
+   cursor: pointer
+   &-active
+    transition: all 0.2s
+    span
+     &::before
+      transform: rotate(0deg)
+  &__btn4
+   cursor: pointer
+   &-active
+    transition: all 0.2s
+    span
+     &::before
+      transform: rotate(0deg)
+  &__btn5
+   cursor: pointer
+   &-active
+    transition: all 0.2s
+    span
+     &::before
+      transform: rotate(0deg)
+  &__text
+   margin-left: 52.5px
+   &-title
+    font-family: Proxima Nova
+    font-style: normal
+    font-weight: bold
+    font-size: 24px
+    line-height: 29px
+    text-align: left
+    color: #1A1A1A
+    min-width: 669.7px
+   &-info
+    font-family: Proxima Nova
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 19px
+    color: #1A1A1A
+    padding-left: 20px
+    position: relative
+    margin-top: 15px
+    display: none
+    &::before
+     content: ''
+     width: 3px
+     height: 100%
+     background: linear-gradient(59deg, rgba(0,147,209,0.5) 20%, rgba(0,147,209,1) 50%, rgba(100,189,227,0.5) 80%)
+     position: absolute
+     left: 3px
+ &-img
+  position: absolute
+  top: 0
+  right: 0
+  z-index: -1

@@ -1,0 +1,64 @@
+.present
+ margin-top: 60px
+ padding-top: 30px
+ padding-bottom: 30px
+ background-color: #F2FBFF
+ &-title
+  font-family: Literata
+  font-style: normal
+  font-weight: bold
+  font-size: 48px
+  line-height: 53px
+  text-align: left
+  color: #1A1A1A
+  position: relative
+  &::before
+   content: ''
+   width: 565px
+   height: 3px
+   background: linear-gradient(59deg, rgba(0,147,209,1) 0%, rgba(0,147,209,0.5) 100%)
+   position: absolute
+   left: 50%
+   margin-left: -50%
+   bottom: -10px
+ &-subtitle
+  font-family: Literata
+  font-style: normal
+  font-weight: 600
+  font-size: 24px
+  line-height: 36px
+  color: #1A1A1A
+  margin-top: 5px
+ &-slider
+  position: relative
+  margin-top: 77px
+  &__block
+   display: flex !important
+   justify-content: center
+   align-content: center
+   img
+    height: 100%
+    text-align: center
+    border-radius: 20px
+    border: 5px solid rgb(117, 214, 255)
+  &__num
+   display: flex
+   justify-content: center
+   align-items: center
+   margin-top: 40px
+   span
+    font-family: Proxima Nova
+    font-style: normal
+    font-weight: normal
+    font-size: 24px
+    line-height: 29px
+    color: #1A1A1A
+    margin-right: 7px
+ &-arrow
+  cursor: pointer
+  &__next
+   margin-left: 8px
+   img
+    transform: rotate(180deg)
+  &__prev
+   margin-right: 15px

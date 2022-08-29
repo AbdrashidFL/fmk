@@ -1,0 +1,121 @@
+.header
+ padding: 30px 0
+ position: relative
+ max-width: 100%
+ overflow: hidden
+ max-height: 100%
+ &.webp
+  background: url(../img/main/bg.jpg) center no-repeat
+  background-size: cover
+ &.no-webp
+  background: url(../img/main/bg.webp) center no-repeat
+  background-size: cover
+ &-top
+  margin: 0 60px
+  display: flex
+  justify-content: space-between
+  align-items: center
+ &-right
+  justify-content: flex-end
+  display: flex
+  align-items: center
+  &__phone
+   font-family: Literata
+   font-style: normal
+   font-weight: 500
+   font-size: 24px
+   line-height: 36px
+   color: #1A1A1A
+   margin-right: 30px
+   &:hover
+    color: #4b4949
+    text-decoration: none
+ &-cloud
+  bottom: -50% !important
+  top: auto !important
+  left: auto !important
+  z-index: 10
+.menu
+ position: relative
+ &-links
+  width: 35px
+  height: 35px
+  transition: all 0.5s
+  cursor: pointer
+  z-index: 1
+  position: relative
+  display: block
+  &__active
+  span
+   width: 35px
+   height: 5px
+   top: 50%
+   left: 50%
+   margin-top: -2.5px
+   margin-left: -17.5px
+   position: absolute
+   background-color: #1a1a1a
+   transition: all 0.5s
+   &::before
+    content: ''
+    width: 35px
+    height: 5px
+    top: 50%
+    left: 50%
+    margin-top: -12px
+    margin-left: -17.5px
+    position: absolute
+    background-color: #1a1a1a
+    transition: all 0.5s
+   &::after
+    content: ''
+    width: 35px
+    height: 5px
+    top: 50%
+    left: 50%
+    margin-top: 8px
+    margin-left: -17.5px
+    position: absolute
+    background-color: #1a1a1a
+    transition: all 0.5s
+  &__active
+   transition: all 0.5s
+   span
+    background-color: transparent
+    &::before
+     transform: rotate(135deg)
+     margin-top: 0
+     background-color: #FFFFFF
+    &::after
+     transform: rotate(-135deg)
+     margin-top: 0
+     background-color: #FFFFFF
+ &-popup
+  height: 100%
+  padding: 198px 66px 0 120px
+  position: absolute
+  top: 0
+  right: 0
+  background: linear-gradient(180deg, #75D6FF -47.17%, #0093D1 156.6%)
+  border-radius: 6px 0px 0px 6px
+  z-index: 1
+  transition: 0.6s
+  transform: translateX(100%)
+  &__active
+   transform: none
+  &__block
+   font-family: Literata
+   font-style: normal
+   font-weight: 600
+   font-size: 36px
+   line-height: 53px
+   text-align: right
+   color: #FFFFFF
+   margin-top: 10px
+   a
+    color: #FFFFFF
+    &:hover
+     text-decoration: none
+    
+
+

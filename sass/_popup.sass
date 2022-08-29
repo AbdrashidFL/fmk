@@ -1,0 +1,76 @@
+.popup
+ position: fixed
+ top: 0
+ left: 0
+ width: 100%
+ height: 100%
+ display: none
+ justify-content: center
+ align-items: center
+ z-index: 2
+ &-before
+  width: 100%
+  height: 100%
+  position: fixed
+  left: 0
+  right: 0
+  background: rgba(117, 214, 255, 0.5)
+  cursor: pointer
+  z-index: -1
+ &-form
+  position: relative
+ &-required
+  position: absolute
+  width: 100%
+  background: #f00
+  text-align: center
+  font-size: 12px
+  border-radius: 0 0 5px 5px
+  bottom: 15px
+  transition: 0.5s
+  opacity: 0
+  color: #fff
+  &__error
+   opacity: 1
+   bottom: 61px
+ &-wrap
+  background: #FFFFFF
+  border-radius: 6px
+  padding: 50px 30px
+ &-header
+  font-family: Literata
+  font-style: normal
+  font-weight: bold
+  font-size: 36px
+  line-height: 53px
+  text-align: center
+  color: #000000
+  margin-bottom: 25px
+ &-input
+  width: 309px
+  height: 42px
+  display: block
+  margin-bottom: 25px
+  border: none
+  border-bottom: 1px solid #75D6FF
+ &-btn
+  display: block
+  margin: 0 auto
+  background: linear-gradient(180deg, #75D6FF -47.17%, #0093D1 156.6%)
+  border-radius: 5px
+  width: 180px
+  height: 53px
+  position: relative
+  border: none
+  font-family: Proxima Nova
+  font-style: normal
+  font-weight: bold
+  font-size: 24px
+  line-height: 29px
+  color: #FFFFFF
+  box-shadow: 0px 2px 0px #0B739E
+  transition: 0.4s
+  &:hover
+   color: #FFFFFF
+   box-shadow: none
+   transform: translateY(2px)

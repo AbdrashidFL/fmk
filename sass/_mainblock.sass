@@ -1,0 +1,87 @@
+.main
+ margin: 30px 0 60px 0
+ border-radius: 5px
+ display: flex
+ justify-content: center
+ align-items: center
+ position: relative
+ width: 100%
+ height: 100%
+ pointer-events: auto !important
+ //  border: 20px solid #64BDE3
+ &-border
+  border: 20px solid #64BDE3
+  left: -4% !important
+  top: -5% !important
+  width: 108%
+  height: 110%
+  position: absolute
+ &-block
+  width: 100%
+  border-radius: 5px
+  margin: 18px 48px
+  padding: 52px 0
+  position: relative
+  z-index: 2
+  // border: 20px solid #0093D1
+  &::before
+   content: ''
+   width: 100%
+   height: 100%
+   filter: blur(4px)
+   border: 20px solid #64BDE3
+   position: absolute
+   left: 50%
+   transform: translateX(-50%)
+   margin: -52px 0
+  &__text
+   font-family: Proxima Nova
+   font-style: normal
+   font-weight: normal
+   font-size: 36px
+   line-height: 44px
+   color: #1A1A1A
+   text-align: center
+  &__title
+   font-family: Literata
+   font-style: normal
+   font-weight: bold
+   font-size: 64px
+   line-height: 95px
+   text-align: center
+   text-transform: uppercase
+   color: #1A1A1A
+   margin-top: 5px
+   position: relative
+   &::before
+    content: ''
+    width: 740px
+    height: 3px
+    background: linear-gradient(59deg, rgba(0,147,209,0.5) 20%, rgba(0,147,209,1) 50%, rgba(100,189,227,0.5) 80%)
+    position: absolute
+    left: 50%
+    margin-left: -370px
+    bottom: -10px
+  &__btn
+   width: 180px
+   display: block
+   margin: 0 auto
+   margin-top: 30px
+  &__subtitle
+   font-family: Proxima Nova
+   font-style: normal
+   font-weight: normal
+   font-size: 36px
+   line-height: 44px
+   text-align: center
+   color: #1A1A1A
+   margin-top: 20px
+   padding: 0 215px
+ &-oil1
+  left: -155px !important
+  top: -55px !important
+ &-oil2 
+  right: -205px !important
+  top: 120px !important
+  left: auto !important
+
